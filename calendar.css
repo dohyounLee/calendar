@@ -1,0 +1,49 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+h1, h2 { 
+    text-align: center;
+}
+
+#calendar {
+    text-align: center;
+}
+
+#calendar img {
+    width: 30%;
+}
+#calendar table {
+    width: 30%;
+    border: 2px solid;
+    height: auto;
+    /* 테이블 가운데 정렬 */
+    margin-left:auto;
+    margin-right:auto;
+}
+/* calendar,th일 경우 calender와 th임 띄어쓰기의 경우 중에서 th */
+
+#calendar th { 
+    width: 14%;
+    background-color: #dbdbdb;
+}
+
+#calendar td {
+    padding: 10px;
+    border: 1px solid #cccc;
+}
+
+/*th: first-child 이런식을 공백 넣었더니 오류남 주의*/
+#calendar th:first-child,
+#calendar td:first-child{
+    color: #ff0000;
+}
+
+#calendar th:last-child,
+#calendar td:last-child{
+    color: #0000ff;
+}
+
+
+
